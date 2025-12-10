@@ -178,7 +178,7 @@ ylim(ax3, [0, 1.2])
 title(ax3, 'G(x,t)')
 grid(ax3, 'on')
 
-if esplicit
+if explicit
     step=500; % to satisfy CFL dt must be very small
 else
     step=100;
@@ -232,5 +232,6 @@ xlabel('Time[h]', 'FontSize',16)
 ylabel('n(t)', 'FontSize',16)
 plot(t_vec,n_vec, 'LineWidth',2.5)
 hold off
+
 
 
