@@ -67,7 +67,7 @@ for i = 1:length(xall)
 end
 
 
-%% esplicit scheme
+%% explicit scheme
 if explicit
     fprintf('stability dt<0.5*dx^2/Dn: dt=%.2f, 1/2*dx^2/Dn=%.2f \n', dt, 1/2*dx^2/Dn)
     fprintf('stability dt<0.5*dx^2/Dmu: dt=%.3f, 1/2*dx^2/Dmu=%.4f \n', dt, 0.5*dx^2/Dmu)
@@ -232,4 +232,5 @@ xlabel('Time[h]', 'FontSize',16)
 ylabel('n(t)', 'FontSize',16)
 plot(t_vec,n_vec, 'LineWidth',2.5)
 hold off
+
 
